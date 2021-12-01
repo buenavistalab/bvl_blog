@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <figure class="image is-3by1">
-  <%= image_tag @post.featured_image %>
+  <%= image_tag @post.featured_image if @post.featured_image.attached? %>
 </figure>
 
 </br>
@@ -26,6 +26,8 @@
 
 <div class='row'>
   <%= link_to 'Edit', edit_post_path(@post) %>
+  </br>
+  <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
   </br>
   <%= link_to 'Back', posts_path %> 
 </div>

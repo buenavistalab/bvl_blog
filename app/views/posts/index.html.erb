@@ -1,6 +1,7 @@
 <section class="hero">
   <h2>
-    Welcome to BuevaVistaLabBlog, the simplest way to start publishing with Ruby on Rails.
+    Welcome to the blog of buenavistalab, the simplest way to start publishing 
+    your ideas.
   </h2>
 </section>
 
@@ -23,9 +24,9 @@
                 </div>
               </div>
               <div class="content">
-                <%= post.content.to_plain_text.truncate(50) %>
+                <%= post.content.to_plain_text.truncate(150) %>
               </div>
-              <p>Autor: <%= post.author %> - <%= post.created_at.strftime("%d/%m/%Y") %></p>
+              <p>Autor: <%= post.author %>, <%= post.created_at.strftime("%d/%m/%Y") %></p>
             </div>
         </div>
       </a>

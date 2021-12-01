@@ -5,6 +5,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: lavender !important;
 }
 * {
   margin: 0;
@@ -23,6 +24,9 @@ body {
   background-color: #97D9E1;
   color: #D9AFD9;
 }
+.navbar {
+  background-color: transparent !important;
+}
 .navbar-item h1 {
   font-size: 1.2rem;
   font-style: italic;
@@ -35,7 +39,7 @@ body {
 }
 .hero {
   width: 100%;
-  padding: 100px 200px 100px 0;
+  padding: 100px 300px 100px 0;
 }
 .hero h2 {
   font-family: 'Azeret Mono', monospace;
@@ -46,6 +50,7 @@ body {
 .card {
   box-shadow: unset !important;
   border-radius: unset !important;
+  background-color: transparent !important;
 }
 .card-content {
   padding: 1.5rem 0 !important;
@@ -56,6 +61,18 @@ body {
 .card-image img {
   border-radius: unset !important;
   box-shadow: 0 30px 60px -10px rgb(0 0 0 / 30%), 0 18px 36px -18px rgb(0 0 0 / 33%) !important;
+}
+.card-image img:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.2);
+  transform: translate3D(0, -10px, 0);
+  opacity: 0.7;
+}
+.card .media:not(:last-child),
+.content:not(:last-child) {
+  margin-bottom: 0.5rem !important;
+}
+.card {
+  width: 70% !important;
 }
 .title {
   line-height: unset !important;
@@ -77,7 +94,17 @@ footer {
   padding: 50px 15px 20px;
   text-align: center;
 }
+.row {
+  padding: 0 15px;
+}
 @media (max-width: 556px) {
+  .card {
+    width: initial !important;
+  }
+  .hero {
+    width: 100%;
+    padding: 100px 100px 100px 0;
+  }
   .hero h2 {
     font-size: 2rem;
     line-height: 2rem;

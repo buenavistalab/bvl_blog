@@ -22,3 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## TODO
+
+* post's tags
+
+* hamburger menu
+
+* adjust style
+
+* deploy

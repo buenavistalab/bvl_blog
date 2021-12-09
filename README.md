@@ -32,3 +32,7 @@ Things you may want to cover:
 * adjust style
 
 * deploy
+
+* add gem comments
+
+
